@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :kinds
   resources :contacts #define todas as rotas automaticamente através de "resources "
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
