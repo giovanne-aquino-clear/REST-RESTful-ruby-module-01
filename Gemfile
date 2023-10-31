@@ -2,6 +2,11 @@ source "https://rubygems.org"
 
 ruby "3.1.4"
 
+gem 'htmlbeautifier'
+
+gem "ruby-lsp"
+gem "rubocop"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.1"
 
@@ -40,6 +45,8 @@ group :development, :test do
   gem "faker"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+
+  gem 'pry-rails'
 end
 
 group :development do
