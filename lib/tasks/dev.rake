@@ -25,7 +25,7 @@ namespace :dev do
       Contact.create!(
         name: Faker::Name.name,
         email: Faker::Internet.email,
-        birthdate: Faker::Date.between(65.years.ago, 18.years.ago),
+        birthdate: Faker::Date.between(from: '2014-09-23', to: '2014-09-25'),
         kind: Kind.all.sample
       )
     end
@@ -51,7 +51,7 @@ namespace :dev do
     puts "Cadastrando os endereços..."
 
     Contact.all.each do |contact|
-       Address.create(
+      Address.create(
         street: Faker::Address.street_address,
         city: Faker::Address.city,
         contact: contact
