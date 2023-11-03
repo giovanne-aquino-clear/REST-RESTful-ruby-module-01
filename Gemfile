@@ -22,7 +22,14 @@ gem 'devise-i18n'
 # Manage Procfile-based applications
 gem 'foreman'
 
+# A plugin for versioning Rails based RESTful APIs.
 gem 'versionist'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+# Link header pagination for Rails and Grape APIs.
+# gem 'api-pagination'
+
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
