@@ -3,7 +3,6 @@ class ContactsController < ApplicationController
 
   # GET /contacts
   def index
-    @contacts = Contact.all
 
     render json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
   end
@@ -23,7 +22,7 @@ class ContactsController < ApplicationController
       render json: @contact.errors, status: :unprocessable_entity
     end
   end
-
+ 
   # PATCH/PUT /contacts/1
   def update
     if @contact.update(contact_params)
